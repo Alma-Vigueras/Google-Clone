@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+
+/***********************Navegación*********************/
+
+header{
+    /* background-color: aqua; */
+    width: 100%;
+    height: 60px;
+}
+
+/*acceso al navegador a traves del header */
+header nav{ 
+    display: flex;
+    /* justificacion a la derecha */
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+    /* background-color: aqua; */
+    width: 250px;
+    height: auto;
+    /* eliminar puntitos */
+    list-style: none;
+    display: flex;
+    /* justificar al centro */
+    justify-content: center;
+    /* centrado verticalmente */
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav .nav-right-section a{
+    color: rgba(0, 0,0,0.87);
+    margin-right: 20px;
+}
+
+nav .nav-right-section .menu{
+    /* Ponemos imagen */
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    /* se hace más grande la imagen del elemento */
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+}
+
+/* imagen del usuario */
+nav .nav-right-section img{
+    /* redondeado de bordes */
+    border-radius: 100%;
+    width: 30px;
+    margin-left: 20px;
+}
+
+/* ******************************MAIN****************/
+
+main{
+    margin-top: 150px;
+    text-align: center;
+}
+
+main .main-logo{
+    background-color: azure;
+    width: 530px;
+    margin-bottom: 40px;
+    margin: 0 auto;
+}
+
+main .main-logo img{
+    height: 120px;
+}
+
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+main .main-input-container{
+    width: 525px;
+    border: 1px solid #dfe1ed;
+    border-radius: 20px;
+}
+
+main .main-input input{
+    height: 35px;
+    border: none;
+    /* outline - quita el contorno al accionar el contenedor */
+    outline: none; 
+    width: 500px;
+}
